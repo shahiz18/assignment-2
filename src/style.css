@@ -5,7 +5,7 @@ body{
     
     background-image:URL(https://s3-alpha-sig.figma.com/img/1ca8/a666/37aa17d7080da3224dc200ed1db1e95f?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Pr5ypFGTPIftkZPWOE5ki6uu2Yp30o2WZyOYtDzMvvC5L-S3EbAW4oCXMP7PfLEn7vUE9WqqO0-avwqZnxSdVEBppmQlCaXy1-KcecMi5KPy7YUZNmbjRW7P0pBNCmmSYcA-Ngt3F7~mcluVzoFSUmt6hO9H3OtLyujBINfRONVeTWgCsh04ntWzPzI3NoobFf-x2GEIaB4bj3mdDOt77nlwFLvDR1aCjzQdX9tD9DMr1KSlPwdbhRPS6J3TjtnZGyNEh77WldTayYEhyqSarLAuNH40OX8ph2OcpcLou5eiWSQW4C8ktxttv9I59WZYX0Tsk~mMxFa9GgMtIdbe9Q) ; /* Replace 'your_image_url_here.jpg' with the URL of your background image */
     background-size: cover;
-    object-fit: cover;
+   
     width: 100%;
 height: 896px;
 padding-bottom: 50px;
@@ -76,7 +76,7 @@ color: #ffffff;
 
 }
 #buttondiv{
-    padding-left: 20px;
+    
     padding-top: 10px;
 }
 #learnbutton{
@@ -95,7 +95,8 @@ border-radius: 5px;
     flex-direction: column;
     margin: 0 30px;
     padding-bottom: 30px;
-    border: 1px ;
+    border: 1px solid lightgrey ;
+
 }
 #news-read{
     padding: 70px 0 40px 30px;
@@ -105,9 +106,9 @@ border-radius: 5px;
 }
 .castle{
     width: 100%;
-height: 300px;
+height: 280px;px;
 border-radius: 4px;
-object-fit: cover;
+
 }
 .date{
     font-family: Inter;
@@ -119,7 +120,7 @@ color: #B7B7B7;
 
 .bottom-sentence{
     font-family: Inter;
-font-size: 20px;
+font-size: 12px;
 font-weight: 700;
 text-align: left;
 
@@ -139,6 +140,34 @@ color: #050505;
     padding: 20px;
 }
 
+@media screen and (min-width: 576px) {
+    html {
+     #imagepart{
+        width: 100%;
+     }
+     
+    #textbox{
+        margin:0 auto;
+        max-width:80%;
+    }
+    #bottom-whole{
+        display :flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      
+    }
+    .bottom-div{
+        width: 30%;
+        margin:0;
+
+    }
+    .castle{
+        width: 100%;
+       hieght:250px;
+
+    }
+
+}
 
 
 
